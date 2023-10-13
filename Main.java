@@ -6,8 +6,7 @@ public class Main {
         int choice = 0;
         System.out.println("Scegli il tipo di supporto che vuoi usare :\n[1] Natro \n[2] Compact Disc\n[0] ESCI\n");
         
-        
-        while(choice != -1){
+        while(choice != 0){
             choice = Integer.parseInt(in.nextLine());
             switch (choice) {
                 case 1:
@@ -25,7 +24,6 @@ public class Main {
                     CDFactory.playSupport();
                     break;
                 case 0:
-                    choice -= 1;
                     break;
                 default:
                     System.out.println("\nInserisci 1 o 2 . ");
