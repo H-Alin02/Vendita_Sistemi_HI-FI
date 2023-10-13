@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int choice = 0;
-        System.out.println("Scegli il tipo di supporto che vuoi usare :\n[1] Natro \n[2] Compact Disc\n[-1] ESCI\n");
+        System.out.println("Scegli il tipo di supporto che vuoi usare :\n[1] Natro \n[2] Compact Disc\n[0] ESCI\n");
         
         
         while(choice != -1){
@@ -24,7 +24,8 @@ public class Main {
                     CDFactory.recordSupport();
                     CDFactory.playSupport();
                     break;
-                case -1: 
+                case 0:
+                    choice -= 1;
                     break;
                 default:
                     System.out.println("\nInserisci 1 o 2 . ");
